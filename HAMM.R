@@ -1,6 +1,6 @@
 # user-defined function dH(s,t) where both s and t are given strings (assumed same length)
 # compares s to t, and outputs a TRUE or FALSE for each character
-# then sums all FALSE values, denoted by != (where s != t)
+# then sums all TRUE values, denoted by != (where s mismatches t)
 
 dH <- function(s,t){
   sum(unlist(strsplit(s,split="")) != unlist(strsplit(t,split="")))
